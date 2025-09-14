@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Bloom's Favorite Arts</title>
+</head>
+
+<body>
+  <div class="flex gap-x-3 gap-y-2 m-4">
+    <div id="tags"
+      class="bg-black grid grid-row items-center justify-center rounded-full gap-3 min-h-[96vh] max-h-[96vh] w-20 overflow-y-auto">
+      <div class="bg-blue-500 rounded-full w-20 max-h-20 stroke-white stroke-3 flex items-center justify-center">
+        <img class="rounded-full bg-white"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.genius.com%2F3c2049d1d31a7a98c6e73649ec71b0ad.1000x1000x1.png&f=1&nofb=1&ipt=4f746d85dc16a266c834c35336517582ab6d9c794137280b772cd6fae295d63a"
+          alt="">
+      </div>
+    </div>
+    <div id="arts" class="grid grid-cols-4 px-[25px] py-[20px] gap-5 bg-red-500 rounded max-h-[96vh] w-screen overflow-auto">
+
+    </div>
+
+    <div id="artists" class="bg-black flex items-center rounded-full min-h-[96vh] max-h-[96vh] w-20 overflow-y-auto">
+      <div class="bg-blue-500 rounded-full w-20 max-h-20"></div>
+    </div>
+  </div>
+
+  <script src="/scripts/script.js"></script>
+  <script>
+    (async function () {
+      const artDiv = document.getElementById("arts");
+      const testDiv = document.getElementById("test");
+      // console.log("I am ready");
+
+      const arts = await fetchArt();
+      console.log(arts.length);
+
+      for (var i = 0; i < arts.length; i++) {
+        // console.log(arts[i]);
+        // console.log("looped?");
+        var obj = arts[i];
+        for (key in obj) {
+         
+
+            console.log(obj);
+            // var createLink = document.createElement("a")
+            // var createDiv = document.createElement("div");
+            // var createImg = document.createElement("img");
+            // createLink.setAttribute('href', '');
+            // createImg.setAttribute('width', '300px');
+            // createImg.classList.add("rounded-[10px]");
+            // createImg.src = obj["img"];
+
+            // artDiv.appendChild(createDiv).appendChild(createLink).appendChild(createImg);
+
+
+        }
+      }
+    })();
+  </script>
+
+</body>
+
+</html
