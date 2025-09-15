@@ -18,7 +18,8 @@
           alt="">
       </div>
     </div>
-    <div id="arts" class="grid grid-cols-4 px-[25px] py-[20px] gap-5 bg-red-500 rounded max-h-[96vh] w-screen overflow-auto">
+    <div id="arts"
+      class="grid grid-cols-4 px-[25px] py-[20px] gap-5 bg-red-500 rounded max-h-[96vh] w-screen overflow-auto">
 
     </div>
 
@@ -32,32 +33,45 @@
     (async function () {
       const artDiv = document.getElementById("arts");
       const testDiv = document.getElementById("test");
-      // console.log("I am ready");
 
-      const arts = await fetchArt();
-      console.log(arts.length);
+      const arts = await getArtFrom("nichi");
+      const artImg = arts.image.toString().split(",");
+      const artUrl = arts.url.toString().split(",");
+      const artCharacter = arts.characters.toString().split(",");
 
-      for (var i = 0; i < arts.length; i++) {
-        // console.log(arts[i]);
-        // console.log("looped?");
-        var obj = arts[i];
-        for (key in obj) {
-         
-
-            console.log(obj);
-            // var createLink = document.createElement("a")
-            // var createDiv = document.createElement("div");
-            // var createImg = document.createElement("img");
-            // createLink.setAttribute('href', '');
-            // createImg.setAttribute('width', '300px');
-            // createImg.classList.add("rounded-[10px]");
-            // createImg.src = obj["img"];
-
-            // artDiv.appendChild(createDiv).appendChild(createLink).appendChild(createImg);
+      console.log(artImg);
+      console.log(artImg.length);
+      console.log(artUrl);
+      console.log(artUrl.length);
+      console.log(artCharacter);
+      console.log(artCharacter.length);
 
 
-        }
+      for (i = 0; i < artImg.length; i++) {
+        var createLink = document.createElement("a");
+        var createDiv = document.createElement("div");
+        var createImg = document.createElement("img");
+
+        createLink.setAttribute('href', artUrl[i]);
+        createImg.setAttribute('width', '300px');
+        createImg.classList.add("rounded-[10px]");
+        createImg.src = artImg[i];
+
+        artDiv.appendChild(createDiv).appendChild(createLink).appendChild(createImg);
       }
+
+      // arts.forEach((val) => console.log(val));
+
+      // var createLink = document.createElement("a");
+
+
+      // createLink.setAttribute('href', '');
+
+
+
+
+
+
     })();
   </script>
 
