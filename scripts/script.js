@@ -43,19 +43,16 @@ async function fetchCharacterFrom(artist){
   let results = [];
 
   for(const key in arts.twitter[artist].characters){
-    results.push([
-      Object.keys(arts.twitter[artist].characters)
-    ]);
+    results = Object.keys(arts.twitter[artist].characters)
+  
   }
   return results;
 }
-
-
 
 async function getArtFrom(artist){
   return{
     image: await fetchImgFrom(artist), 
     characters: await fetchCharacterFrom(artist),
-    url: await fetchUrlFrom(artist)
+    url: await fetchUrlFrom(artist),
   }
 }

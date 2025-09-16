@@ -8,23 +8,26 @@
   <title>Bloom's Favorite Arts</title>
 </head>
 
-<body>
+<body class="bg-gray-900">
   <div class="flex gap-x-3 gap-y-2 m-4">
     <div id="tags"
-      class="bg-black grid grid-row items-center justify-center rounded-full gap-3 min-h-[96vh] max-h-[96vh] w-20 overflow-y-auto">
-      <div class="bg-blue-500 rounded-full w-20 max-h-20 stroke-white stroke-3 flex items-center justify-center">
-        <img class="rounded-full bg-white"
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.genius.com%2F3c2049d1d31a7a98c6e73649ec71b0ad.1000x1000x1.png&f=1&nofb=1&ipt=4f746d85dc16a266c834c35336517582ab6d9c794137280b772cd6fae295d63a"
-          alt="">
+      class="bg-slate-800 grid grid-row items-center justify-center rounded-full gap-3 min-h-[96vh] max-h-[96vh] w-20 overflow-y-auto">
+      <!-- charas/tags -->
+    </div>
+
+    <div class="max-h-[96vh] w-full overflow-auto rounded mx-auto">
+      <div id="arts"
+        class="lg:columns-5 md:columns-3 sm:columns-2 px-[25px] py-[20px] bg-slate-950 rounded">
+        <!-- art pics -->
       </div>
     </div>
-    <div id="arts"
-      class="grid grid-cols-4 px-[25px] py-[20px] gap-5 bg-red-500 rounded max-h-[96vh] w-screen overflow-auto">
 
-    </div>
 
-    <div id="artists" class="bg-black flex items-center rounded-full min-h-[96vh] max-h-[96vh] w-20 overflow-y-auto">
-      <div class="bg-blue-500 rounded-full w-20 max-h-20"></div>
+    <div class="bg-blue-500 rounded-full w-20 max-h-20">
+      <div id="artists"
+      class="bg-slate-800 flex flex-col items-center rounded-full min-h-[96vh] max-h-[96vh] w-20 overflow-y-auto">
+        <!-- artists here -->
+      </div>
     </div>
   </div>
 
@@ -32,32 +35,62 @@
   <script>
     (async function () {
       const artDiv = document.getElementById("arts");
-      const testDiv = document.getElementById("test");
+      const artistsDiv = document.getElementById("artists");
 
-      const arts = await getArtFrom("nichi");
-      const artImg = arts.image.toString().split(",");
-      const artUrl = arts.url.toString().split(",");
-      const artCharacter = arts.characters.toString().split(",");
+      callJson = await fetchArt();
 
-      console.log(artImg);
-      console.log(artImg.length);
-      console.log(artUrl);
-      console.log(artUrl.length);
-      console.log(artCharacter);
-      console.log(artCharacter.length);
+      allTwtArtist = Object.keys(callJson.twitter);
 
+      async function display(artist) {
+        const arts = await getArtFrom(artist);
+        const artImg = arts.image;
+        const artUrl = arts.url;
+        const artCharacter = arts.characters;
 
-      for (i = 0; i < artImg.length; i++) {
-        var createLink = document.createElement("a");
-        var createDiv = document.createElement("div");
-        var createImg = document.createElement("img");
+        let allImg = [];
+        let allUrl = [];
+        let allArtist = [];
 
-        createLink.setAttribute('href', artUrl[i]);
-        createImg.setAttribute('width', '300px');
-        createImg.classList.add("rounded-[10px]");
-        createImg.src = artImg[i];
+        for (i = 0; i < artImg.length; i++) {
+          let createLink = document.createElement("a");
+          let createDiv = document.createElement("div");
+          let createImg = document.createElement("img");
 
-        artDiv.appendChild(createDiv).appendChild(createLink).appendChild(createImg);
+          createLink.setAttribute('href', artUrl[i]);
+          createLink.style.height = "max-content";
+          createLink.style.width = "max-content";
+
+          createImg.style.maxWidth = "200px";
+          createImg.style.minWidth = "300px";
+          createImg.classList.add("rounded-[10px]");
+
+          createDiv.style.height = "max-content";
+          createDiv.classList.add("break-inside-avoid");
+          createDiv.classList.add("mb-4");
+          createDiv.style.width = "max-content";
+
+          createImg.src = artImg[i];
+
+          artDiv.appendChild(createDiv).appendChild(createLink).appendChild(createImg);
+        }
+      }
+
+      for(i = 0; i < allTwtArtist.length; i++){
+        let createDiv = document.createElement("div");
+        let createImg = document.createElement("img");
+
+        createDiv.classList.add("rounded-full");
+        createDiv.classList.add("w-15");
+        createDiv.classList.add("bg-white");
+
+        createImg.classList.add("rounded-full");
+        createImg.src = "";
+        
+        artistsDiv.appendChild(createDiv).appendChild(createImg);
+      }
+
+      for (i = 0; i < allTwtArtist.length; i++) {
+        display(allTwtArtist[i]);
       }
 
       // arts.forEach((val) => console.log(val));

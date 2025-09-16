@@ -12,6 +12,123 @@
                     "img": "https://pbs.twimg.com/media/GyGPVcwaEAAgDKD?format=jpg&name=large"
                 }
             }
+        },
+        "redi": {
+            "profile": "https://x.com/redi_rkgk/photo",
+            "characters": {
+                "unknown": {
+                    "url": "https://x.com/redi_rkgk/status/1846957257700860211/photo/1",
+                    "img": "https://pbs.twimg.com/media/GaG1xiQWAAAscba?format=jpg&name=large"
+                }
+            }
+        },
+        "jl_t4n": {
+            "profile": "https://x.com/JL_T4N/photo",
+            "characters": {
+                "ryoYamada": {
+                    "url": "https://x.com/JL_T4N/status/1954927165621121030/photo/1",
+                    "img": "https://pbs.twimg.com/media/GyFL4wxXsAAv51A?format=jpg&name=4096x4096"
+                }
+            }
+        },
+        "こうこうや": {
+            "profile": "https://x.com/U80x8Bltm00Rqeo/photo",
+            "characters": {
+                "frieren": {
+                    "url": "https://x.com/U80x8Bltm00Rqeo/status/1967751073206313029/photo/1",
+                    "img": "https://pbs.twimg.com/media/G07bBaQa0AAFBPB?format=jpg&name=4096x4096"
+                }
+            }
+        },
+        "z": {
+            "profile": "https://x.com/z_oio9/photo",
+            "characters": {
+                "unknown": {
+                    "url": "https://x.com/z_oio9/status/1959275464863760573/photo/1",
+                    "img": "https://pbs.twimg.com/media/GzC-piwaAAABVXA?format=jpg&name=large"
+                }
+            }
+        },
+        "きぬたく":{
+            "profile": "https://x.com/Kinutaku_/photo",
+            "characters": {
+                "unknown": {
+                    "url": "https://x.com/Kinutaku_/status/1840006333971738720/photo/1",
+                    "img": "https://pbs.twimg.com/media/GYkEAgCbUAAK9Lc?format=jpg&name=large"
+                }
+            }
+        },
+        "QUASARCAKE": {
+            "profile": "https://x.com/QUASARCAKE/photo",
+            "characters": {
+                "stark&fern": {
+                    "url": "https://x.com/QUASARCAKE/status/1736081727565771145/photo/1",
+                    "img": "https://pbs.twimg.com/media/GBfM3AFa8AAZz3P?format=jpg&name=large"
+                }
+            }
+        },
+        "れぇｯ/新刊委託中": {
+            "profile": "https://x.com/ree_kkr/photo",
+            "characters": {
+                "nijika&ryo": {
+                    "url": "https://x.com/ree_kkr/status/1830230056972718103/photo/1",
+                    "img": "https://pbs.twimg.com/media/GWZIdcAaEAAf9BV?format=jpg&name=medium"
+                }
+            }
+        },
+        "chikachan": {
+            "profile": "https://x.com/Hawaii1090/photo",
+            "characters": {
+                "cirno": {
+                    "url": "https://x.com/Hawaii1090/status/1830010175618437338/photo/1",
+                    "img": "https://pbs.twimg.com/media/GWV_mGAbQAEpmmb?format=jpg&name=large"
+                }
+            }
+        },
+        "naro": {
+            "profile": "https://x.com/Narorocc/photo",
+            "characters": {
+                "unknown": {
+                    "url": "https://x.com/Narorocc/status/1830310654265192599/photo/1",
+                    "img": "https://pbs.twimg.com/media/GWaR1gfXsAEYyrs?format=jpg&name=large"
+                }
+            }
+        },
+        "茉葛": {
+            "profile": "https://x.com/Matumatu_006/photo",
+            "characters": {
+                "unknown": {
+                    "url": "https://x.com/Matumatu_006/status/1826973523312857471/photo/1",
+                    "img": "https://pbs.twimg.com/media/GVq2u-sbwAAK2-a?format=jpg&name=large"
+                }
+            }
+        },
+        "れおなるど": {
+            "profile": "https://x.com/LeoLeonardK10/photo",
+            "characters": {
+                "unknown": {
+                    "url": "https://x.com/LeoLeonardK10/status/1825453315611939043/photo/1",
+                    "img": "https://pbs.twimg.com/media/GVVQFjQaIAAy7ee?format=jpg&name=4096x4096"
+                }
+            }
+        },
+        "のりうま": {
+            "profile": "https://x.com/noriuma_/photo",
+            "characters": {
+                "reimu": {
+                    "url": "https://x.com/noriuma_/status/1826809175365533735/photo/1",
+                    "img": "https://pbs.twimg.com/media/GVohQsObgAAuaSu?format=jpg&name=900x900"
+                }
+            }
+        },
+        "khyle.": {
+            "profile": "https://x.com/khyleri/photo",
+            "characters": {
+                "nijika": {
+                    "url": "https://x.com/khyleri/status/1759246948954153062/photo/1",
+                    "img": "https://pbs.twimg.com/media/GGoZIKRacAAHdYd?format=jpg&name=4096x4096"
+                }
+            }
         }
     }
 }
