@@ -1,0 +1,8 @@
+.hover{
+    transition: all 0.3s ease;
+}
+
+.hover:hover{
+    transform: rotate(2.5deg);
+    z-index: 10;
+}

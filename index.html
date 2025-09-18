@@ -5,29 +5,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style/style.css">
   <title>Bloom's Favorite Arts</title>
 </head>
 
 <body class="bg-gray-900">
   <div class="flex gap-x-3 gap-y-2 m-4">
-    <div id="tags"
-      class="bg-slate-800 grid grid-row items-center justify-center rounded-full gap-3 min-h-[96vh] max-h-[96vh] w-20 overflow-y-auto">
-      <!-- charas/tags -->
+    <div>
+      <div id="tags"
+        class="bg-slate-800 grid grid-row items-center justify-center rounded-full gap-3 min-h-[80vh] max-h-[80vh] w-20 overflow-y-auto">
+        <!-- charas/tags -->
+      </div>
+      <div id="artistsLabel"
+        class="bg-slate-800 flex items-center rounded-full min-h-[16vh] max-h-[16vh] justify-center text-center text-white">
+        <p>characters <br>here</p>
+      </div>
     </div>
 
     <div class="max-h-[96vh] w-full overflow-auto rounded mx-auto">
-      <div id="arts"
-        class="lg:columns-5 md:columns-3 sm:columns-2 px-[25px] py-[20px] bg-slate-950 rounded">
+      <div id="arts" class="lg:columns-5 md:columns-3 sm:columns-2 px-[25px] py-[20px] bg-slate-950 rounded">
         <!-- art pics -->
       </div>
     </div>
 
 
-    <div class="bg-blue-500 rounded-full w-20 max-h-20">
+    <div>
       <div id="artists"
-      class="bg-slate-800 flex flex-col items-center rounded-full min-h-[96vh] max-h-[96vh] w-20 overflow-y-auto">
+        class="bg-slate-800 flex flex-col items-center rounded-full min-h-[80vh] max-h-[80vh] w-20 overflow-y-auto ">
         <!-- artists here -->
       </div>
+
+      <div id="artistsLabel"
+        class="bg-slate-800 flex items-center rounded-full min-h-[16vh] max-h-[16vh] justify-center text-center text-white">
+        <p>artists <br>here</p>
+      </div>
+
     </div>
   </div>
 
@@ -41,67 +53,73 @@
 
       allTwtArtist = Object.keys(callJson.twitter);
 
-      async function display(artist) {
+
+      console.log(`All artist = ${allTwtArtist.length}`);
+
+      // counter for pfp, para ndi masama sa loop ng img
+      async function display(artist, counter) {
         const arts = await getArtFrom(artist);
         const artImg = arts.image;
         const artUrl = arts.url;
         const artCharacter = arts.characters;
+        const artistPfp = arts.pfp
+        const artistProfile = arts.profile
 
-        let allImg = [];
-        let allUrl = [];
-        let allArtist = [];
+        console.log(artCharacter);
 
+        // for middle part (main gallery / pics / img)
         for (i = 0; i < artImg.length; i++) {
           let createLink = document.createElement("a");
           let createDiv = document.createElement("div");
           let createImg = document.createElement("img");
 
           createLink.setAttribute('href', artUrl[i]);
+          createLink.setAttribute('target', "_blank");
           createLink.style.height = "max-content";
           createLink.style.width = "max-content";
 
-          createImg.style.maxWidth = "200px";
-          createImg.style.minWidth = "300px";
+          createImg.style.maxWidth = "230px";
+          createImg.style.minWidth = "100px";
           createImg.classList.add("rounded-[10px]");
 
           createDiv.style.height = "max-content";
           createDiv.classList.add("break-inside-avoid");
           createDiv.classList.add("mb-4");
+          createDiv.classList.add("hover");
           createDiv.style.width = "max-content";
 
           createImg.src = artImg[i];
 
           artDiv.appendChild(createDiv).appendChild(createLink).appendChild(createImg);
+
         }
+
+        // for right-side (pfp/profile/artist)
+        let createDiv_Artist = document.createElement("div");
+        let createLink_Artist = document.createElement("a");
+        let createImg_Artist = document.createElement("img");
+
+        createDiv_Artist.classList.add("rounded-full");
+        createDiv_Artist.classList.add("w-15");
+        createDiv_Artist.classList.add("bg-white");
+        createDiv_Artist.classList.add("mb-2");
+
+        createLink_Artist.setAttribute("href", artistProfile[counter]);
+        createLink_Artist.setAttribute("target", "_blank");
+
+        createImg_Artist.classList.add("rounded-full");
+        createImg_Artist.src = artistPfp[counter];
+        createImg_Artist.alt = allTwtArtist[counter];
+        createImg_Artist.title = allTwtArtist[counter];
+
+        artistsDiv.appendChild(createDiv_Artist).appendChild(createLink_Artist).appendChild(createImg_Artist);
       }
 
-      for(i = 0; i < allTwtArtist.length; i++){
-        let createDiv = document.createElement("div");
-        let createImg = document.createElement("img");
 
-        createDiv.classList.add("rounded-full");
-        createDiv.classList.add("w-15");
-        createDiv.classList.add("bg-white");
-
-        createImg.classList.add("rounded-full");
-        createImg.src = "";
-        
-        artistsDiv.appendChild(createDiv).appendChild(createImg);
-      }
 
       for (i = 0; i < allTwtArtist.length; i++) {
-        display(allTwtArtist[i]);
+        display(allTwtArtist[i], i);
       }
-
-      // arts.forEach((val) => console.log(val));
-
-      // var createLink = document.createElement("a");
-
-
-      // createLink.setAttribute('href', '');
-
-
-
 
 
 
