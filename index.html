@@ -105,8 +105,6 @@
         createDiv_Artist.classList.add("w-15");
         createDiv_Artist.classList.add("bg-white");
         createDiv_Artist.classList.add("mb-2");
-        createDiv_Artist.classList.add("artistDiv");
-        createDiv_Artist.classList.add("outOfFocus");
 
         createLink_Artist.setAttribute("href", artistProfile[counter]);
         createLink_Artist.setAttribute("target", "_blank");
@@ -119,31 +117,18 @@
         artistsDiv.appendChild(createDiv_Artist).appendChild(createLink_Artist).appendChild(createImg_Artist);
       }
 
+
       artistsParentDiv.style.transition = "all 0.5s ease";
       artistsDiv.style.transition = "min-height 0.5s ease, max-height 0.5s ease";
-      document.querySelectorAll(".artistDiv").forEach(el => {
-        el.style.transition = "filter 0.9s ease";
-      })
 
-      artistsDiv.classList.add("z-[2]");
-
-
-      artistsDiv.addEventListener("mouseover", () => {
+      artistsDiv.addEventListener("mouseenter", () => {
         artistsDiv.classList.remove("max-h-[30vh]");
         artistsDiv.classList.add("max-h-[96vh]");
-        // artistImg.classList.remove("outOfFocus");
-        document.querySelectorAll(".artistDiv").forEach(el => {
-          el.classList.remove("outOfFocus");
-        });
       });
 
       artistsDiv.addEventListener("mouseleave", () => {
         artistsDiv.classList.remove("max-h-[96vh]");
         artistsDiv.classList.add("max-h-[30vh]");
-        // artistImg.classList.add("outOfFocus");
-        document.querySelectorAll(".artistDiv").forEach(el => {
-          el.classList.add("outOfFocus");
-        });
       });
 
 
