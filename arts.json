@@ -35,6 +35,10 @@
                 "hitoriGoutou": {
                     "url": "https://x.com/JL_T4N/status/1964351998070845893/photo/1",
                     "img": "https://pbs.twimg.com/media/G0LHl_rWcAAAB1O?format=jpg&name=large"
+                },
+                "ryo": {
+                    "url": "https://x.com/JL_T4N/status/1968648684385497255/photo/1",
+                    "img": "https://pbs.twimg.com/media/G1ILf8xakAAQZZw?format=jpg&name=large"
                 }
             }
         },
@@ -65,6 +69,22 @@
                 "unknown": {
                     "url": "https://x.com/Kinutaku_/status/1840006333971738720/photo/1",
                     "img": "https://pbs.twimg.com/media/GYkEAgCbUAAK9Lc?format=jpg&name=large"
+                },
+                "unknown": {
+                    "url": "https://x.com/Kinutaku_/status/1896534597653160075/photo/1",
+                    "img": "https://pbs.twimg.com/media/GlHYKQ6aQAE1cSA?format=jpg&name=medium"
+                },
+                "six": {
+                    "url": "https://x.com/Kinutaku_/status/1886027679989960962/photo/1",
+                    "img": "https://pbs.twimg.com/media/GiyELXgaEAADgEY?format=jpg&name=large"
+                },
+                "marisa": {
+                    "url": "https://x.com/Kinutaku_/status/1853415099941417455/photo/1",
+                    "img": "https://pbs.twimg.com/media/GbinNY_a8AA_GpP?format=jpg&name=medium"
+                },
+                "rena": {
+                    "url": "https://x.com/Kinutaku_/status/1851593050608591301/photo/1",
+                    "img": "https://pbs.twimg.com/media/GbIuD-cbwAAdO6E?format=jpg&name=large"
                 }
             }
         },
@@ -233,6 +253,44 @@
                 "nijika,ryo": {
                     "url": "https://x.com/rainsong1107/status/1867392045482225890/photo/1",
                     "img": "https://pbs.twimg.com/media/GepPKGlbsAANlJ5?format=jpg&name=large"
+                },
+                "nijika,ryo": {
+                    "url": "https://x.com/rainsong1107/status/1865287879506956744/photo/1",
+                    "img": "https://pbs.twimg.com/media/GeLVbkKawAAFo5R?format=jpg&name=large"
+                }
+            }
+        },
+        "ぶんち": {
+            "profile": "https://x.com/Bunch_1123",
+            "pfp": "https://pbs.twimg.com/profile_images/1652306716544106496/blLudldn_400x400.jpg",
+            "characters": {
+                "frieren": {
+                    "url": "https://x.com/Bunch_1123/status/1968601462293860818/photo/1",
+                    "img": "https://pbs.twimg.com/media/G1Hgl6naQAAvae6?format=jpg&name=large"
+                },
+                "shinobu": {
+                    "url": "https://x.com/Bunch_1123/status/1967507414011523534/photo/1",
+                    "img": "https://pbs.twimg.com/media/G039j72aUAAdOJv?format=jpg&name=large"
+                }
+            }
+        },
+        "のろむ": {
+            "profile": "https://x.com/eg_noro",
+            "pfp": "https://pbs.twimg.com/profile_images/1828199130352488449/EQ_D4tjI_400x400.jpg",
+            "characters": {
+                "nijika": {
+                    "url": "https://x.com/eg_noro/status/1967913880187023784/photo/1",
+                    "img": "https://pbs.twimg.com/media/G09turCaIAAAJbC?format=jpg&name=4096x4096"
+                }
+            }
+        },
+        "くろずみ": {
+            "profile": "https://x.com/curo_zumi",
+            "pfp": "https://pbs.twimg.com/profile_images/1503021324285124608/r5A_-MZI_400x400.jpg",
+            "characters": {
+                "nijika,ryo,kita,hitoriGotou": {
+                    "url": "https://x.com/curo_zumi/status/1968329093947981859/photo/1",
+                    "img": "https://pbs.twimg.com/media/G1DhiPVagAAQgsi?format=jpg&name=4096x4096"
                 }
             }
         }
