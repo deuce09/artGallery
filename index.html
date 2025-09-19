@@ -9,45 +9,49 @@
   <title>Bloom's Favorite Arts</title>
 </head>
 
-<body class="bg-gray-900">
+<body class="bg-gray-900" style="overflow: hidden">
+
   <div class="flex gap-x-3 gap-y-2 m-4">
-    <div>
-      <div id="tags"
-        class="bg-slate-800 grid grid-row items-center justify-center rounded-full gap-3 min-h-[80vh] max-h-[80vh] w-20 overflow-y-auto">
+
+    <div id="charactersParent" class="flex items-center">
+
+      <!-- LEFT SIDE -->
+      <div id="characters"
+        class="bg-slate-800 grid grid-row items-center justify-center rounded-full gap-3 min-h-[30vh] max-h-[30vh] w-20 overflow-y-auto">
         <!-- charas/tags -->
       </div>
-      <div id="artistsLabel"
-        class="bg-slate-800 flex items-center rounded-full min-h-[16vh] max-h-[16vh] justify-center text-center text-white">
-        <p>characters <br>here</p>
-      </div>
+
     </div>
 
-    <div class="max-h-[96vh] w-full overflow-auto rounded mx-auto">
+
+    <!-- MIDDLE -->
+    <div class="max-h-[96vh] overflow-auto rounded-[10px] mx-auto">
       <div id="arts" class="lg:columns-5 md:columns-3 sm:columns-2 px-[25px] py-[20px] bg-slate-950 rounded">
         <!-- art pics -->
       </div>
     </div>
 
+    <!-- RIGHT SIDE -->
+    <div id="artistsParent" class="flex items-center">
 
-    <div>
       <div id="artists"
-        class="bg-slate-800 flex flex-col items-center rounded-full min-h-[80vh] max-h-[80vh] w-20 overflow-y-auto ">
+        class="bg-slate-800 flex flex-col items-center rounded-full min-h-[30vh] max-h-[30vh] w-20 overflow-y-auto ">
         <!-- artists here -->
       </div>
 
-      <div id="artistsLabel"
-        class="bg-slate-800 flex items-center rounded-full min-h-[16vh] max-h-[16vh] justify-center text-center text-white">
-        <p>artists <br>here</p>
-      </div>
-
     </div>
+
   </div>
 
   <script src="/scripts/script.js"></script>
   <script>
     (async function () {
       const artDiv = document.getElementById("arts");
+      const artistsParentDiv = document.getElementById("artistsParent");
       const artistsDiv = document.getElementById("artists");
+
+      const charactersDiv = document.getElementById("characters");
+
 
       callJson = await fetchArt();
 
@@ -64,8 +68,6 @@
         const artCharacter = arts.characters;
         const artistPfp = arts.pfp
         const artistProfile = arts.profile
-
-        console.log(artCharacter);
 
         // for middle part (main gallery / pics / img)
         for (i = 0; i < artImg.length; i++) {
@@ -103,6 +105,8 @@
         createDiv_Artist.classList.add("w-15");
         createDiv_Artist.classList.add("bg-white");
         createDiv_Artist.classList.add("mb-2");
+        createDiv_Artist.classList.add("artistDiv");
+        createDiv_Artist.classList.add("outOfFocus");
 
         createLink_Artist.setAttribute("href", artistProfile[counter]);
         createLink_Artist.setAttribute("target", "_blank");
@@ -115,12 +119,37 @@
         artistsDiv.appendChild(createDiv_Artist).appendChild(createLink_Artist).appendChild(createImg_Artist);
       }
 
+      artistsParentDiv.style.transition = "all 0.5s ease";
+      artistsDiv.style.transition = "min-height 0.5s ease, max-height 0.5s ease";
+      document.querySelectorAll(".artistDiv").forEach(el => {
+        el.style.transition = "filter 0.9s ease";
+      })
+
+      artistsDiv.classList.add("z-[2]");
+
+
+      artistsDiv.addEventListener("mouseover", () => {
+        artistsDiv.classList.remove("max-h-[30vh]");
+        artistsDiv.classList.add("max-h-[96vh]");
+        // artistImg.classList.remove("outOfFocus");
+        document.querySelectorAll(".artistDiv").forEach(el => {
+          el.classList.remove("outOfFocus");
+        });
+      });
+
+      artistsDiv.addEventListener("mouseleave", () => {
+        artistsDiv.classList.remove("max-h-[96vh]");
+        artistsDiv.classList.add("max-h-[30vh]");
+        // artistImg.classList.add("outOfFocus");
+        document.querySelectorAll(".artistDiv").forEach(el => {
+          el.classList.add("outOfFocus");
+        });
+      });
 
 
       for (i = 0; i < allTwtArtist.length; i++) {
         display(allTwtArtist[i], i);
       }
-
 
 
     })();
