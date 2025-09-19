@@ -143,6 +143,16 @@
                     "img": "https://pbs.twimg.com/media/GGoZIKRacAAHdYd?format=jpg&name=4096x4096"
                 }
             }
+        },
+        "pong": {
+            "profile": "https://x.com/pong__o0",
+            "pfp": "https://pbs.twimg.com/profile_images/1817256561167024128/bCzz6Bsg_400x400.jpg",
+            "characters": {
+                "nijika,ryo": {
+                    "url": "https://x.com/pong__o0/status/1966157394158981574/photo/1",
+                    "img": "https://pbs.twimg.com/media/G0kxus7agAA8QMl?format=jpg&name=large"
+                }
+            }
         }
     }
 }
