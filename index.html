@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <title>Bloom's Favorite Arts</title>
 </head>
 
@@ -25,9 +31,16 @@
 
 
     <!-- MIDDLE -->
-    <div class="max-h-[96vh] overflow-auto rounded-[10px] mx-auto">
-      <div id="arts" class="lg:columns-5 md:columns-3 sm:columns-2 px-[25px] py-[20px] bg-slate-950 rounded">
-        <!-- art pics -->
+    <div class="max-h-[96vh] overflow-auto rounded-[10px] mx-auto" style="scrollbar-width: none;">
+      <div class="lg:columns-5 md:columns-3 sm:columns-2 px-[25px] py-[20px] bg-slate-950 rounded">
+        <div id="arts">
+          <!-- art pics -->
+        </div>
+      </div>
+      <div class="mt-5 text-center flex flex-col" style="color: gray">
+        <div>that's all for now...</div>
+        <div class="mt-3">created by: <b><a href="https://github.com/deuce09" target="_blank">deuce09</a></b> / <b><a
+              href="https://www.instagram.com/bloooo.m/" target="_blank">bloom1lk</a></b></div>
       </div>
     </div>
 
@@ -35,7 +48,8 @@
     <div id="artistsParent" class="flex items-center">
 
       <div id="artists"
-        class="bg-slate-800 flex flex-col items-center rounded-full min-h-[30vh] max-h-[30vh] w-20 overflow-y-auto ">
+        class="bg-slate-800 flex flex-col items-center rounded-full min-h-[30vh] max-h-[30vh] w-20 overflow-y-auto"
+        style="scrollbar-width: none;">
         <!-- artists here -->
       </div>
 
@@ -102,6 +116,7 @@
       console.log(`All artist = ${allTwtArtist.length}`);
 
       // create html elements
+      const makeBold = document.createElement("b");
       const create_ArtLink = document.createElement("h3")
       create_ArtLink.textContent = `post link (${platform})`;
       create_ArtLink.style.textDecoration = "underline";
@@ -170,7 +185,7 @@
 
             createModalPfpImg.src = artistPfp[i];
 
-            modalArtist.appendChild(create_Artist);
+            modalArtist.appendChild(makeBold).appendChild(create_Artist);
             modalArtist.appendChild(createModalPfpDiv).appendChild(create_ArtistLink).appendChild(createModalPfpImg);
 
             modalUrl.appendChild(currentUrl).appendChild(create_ArtLink);

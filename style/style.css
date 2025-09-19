@@ -1,3 +1,7 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
 .hover {
   transition: all 0.3s ease;
 }

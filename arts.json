@@ -31,6 +31,10 @@
                 "ryoYamada": {
                     "url": "https://x.com/JL_T4N/status/1954927165621121030/photo/1",
                     "img": "https://pbs.twimg.com/media/GyFL4wxXsAAv51A?format=jpg&name=4096x4096"
+                },
+                "hitoriGoutou": {
+                    "url": "https://x.com/JL_T4N/status/1964351998070845893/photo/1",
+                    "img": "https://pbs.twimg.com/media/G0LHl_rWcAAAB1O?format=jpg&name=large"
                 }
             }
         },
@@ -151,6 +155,68 @@
                 "nijika,ryo": {
                     "url": "https://x.com/pong__o0/status/1966157394158981574/photo/1",
                     "img": "https://pbs.twimg.com/media/G0kxus7agAA8QMl?format=jpg&name=large"
+                },
+                "ryo": {
+                    "url": "https://x.com/pong__o0/status/1968650800164458889/photo/1",
+                    "img": "https://pbs.twimg.com/media/G1INcVhaQAEcd-W?format=jpg&name=4096x4096"
+                }
+            }
+        },
+        "rella": {
+            "profile": "https://x.com/Rellakinoko/photo",
+            "pfp": "https://pbs.twimg.com/profile_images/1466177220905295878/iwAMQRAw_400x400.jpg",
+            "characters":{
+                "hatsune_miku": {
+                    "url": "https://x.com/Rellakinoko/status/1962087728805544289/photo/1",
+                    "img": "https://pbs.twimg.com/media/Gzq7xnSbkAAJNea?format=jpg&name=large"
+                }
+            }
+        },
+        "mokols": {
+            "profile": "https://x.com/MYVia_MOKOLS",
+            "pfp": "https://pbs.twimg.com/profile_images/1646300298556891138/9eRcFgt5_400x400.jpg",
+            "characters": {
+                "nijika": {
+                    "url": "https://x.com/MYVia_MOKOLS/status/1843117488105803931/photo/1",
+                    "img": "https://pbs.twimg.com/media/GZQRbTVbQAA8I73?format=jpg&name=4096x4096"
+                }
+            }
+        },
+        "✟藤條未樂✟": {
+            "profile": "https://x.com/9reiuy/photo",
+            "pfp": "https://pbs.twimg.com/profile_images/1821890575211360259/xBmmo2be_400x400.jpg",
+            "characters": {
+                "nijika": {
+                    "url": "https://x.com/9reiuy/status/1936586745421955403/photo/1",
+                    "img": "https://pbs.twimg.com/media/GuAjYawWkAAzGWr?format=jpg&name=large"
+                },
+                "lain": {
+                    "url": "https://x.com/9reiuy/status/1668224243262459909/photo/1",
+                    "img": "https://pbs.twimg.com/media/Fya5GqlacAE_Siy?format=jpg&name=large"
+                }
+            }
+        },
+        "machuuu": {
+            "profile": "https://x.com/machuuu68",
+            "pfp": "https://pbs.twimg.com/profile_images/1794806486247632896/Ggki6eGp_400x400.jpg",
+            "characters": {
+                "nijika,ryo": {
+                    "url": "https://x.com/machuuu68/status/1837870662775611616/photo/1",
+                    "img": "https://pbs.twimg.com/media/GYFtfb_bAAE338d?format=jpg&name=4096x4096"
+                }
+            }
+        },
+        "生生不淅": {
+            "profile": "https://x.com/rainsong1107",
+            "pfp": "https://pbs.twimg.com/profile_images/1707008580619223040/KrnHMw4Z_400x400.jpg",
+            "characters": {
+                "nijika":{
+                    "url": "https://x.com/rainsong1107/status/1955955374571606264/photo/1",
+                    "img": "https://pbs.twimg.com/media/GyTzCqaaEAAu8z9?format=jpg&name=large"
+                },
+                "nijika,ryo,hitoriGotou,kitaIkuyo": {
+                    "url": "https://x.com/rainsong1107/status/1845382781121200338/photo/1",
+                    "img": "https://pbs.twimg.com/media/GZwd2sUaQAA8pMP?format=jpg&name=large"
                 }
             }
         }
