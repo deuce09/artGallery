@@ -28,11 +28,11 @@
             "profile": "https://x.com/JL_T4N",
             "pfp": "https://pbs.twimg.com/profile_images/1617108081204432899/vN4CnjHH_400x400.jpg",
             "characters": {
-                "ryoYamada": {
+                "ryo": {
                     "url": "https://x.com/JL_T4N/status/1954927165621121030/photo/1",
                     "img": "https://pbs.twimg.com/media/GyFL4wxXsAAv51A?format=jpg&name=4096x4096"
                 },
-                "hitoriGoutou": {
+                "bocchi": {
                     "url": "https://x.com/JL_T4N/status/1964351998070845893/photo/1",
                     "img": "https://pbs.twimg.com/media/G0LHl_rWcAAAB1O?format=jpg&name=large"
                 },
@@ -92,7 +92,7 @@
             "profile": "https://x.com/QUASARCAKE",
             "pfp": "https://pbs.twimg.com/profile_images/1751210416783699968/mFB4CPQi_400x400.jpg",
             "characters": {
-                "stark,fern": {
+                "stark,fern,frieren": {
                     "url": "https://x.com/QUASARCAKE/status/1736081727565771145/photo/1",
                     "img": "https://pbs.twimg.com/media/GBfM3AFa8AAZz3P?format=jpg&name=large"
                 }
@@ -102,7 +102,7 @@
             "profile": "https://x.com/ree_kkr",
             "pfp": "https://pbs.twimg.com/profile_images/1493378335719976962/zizTMnPA_400x400.png",
             "characters": {
-                "nijika,ryo,frieren": {
+                "nijika,ryo": {
                     "url": "https://x.com/ree_kkr/status/1830230056972718103/photo/1",
                     "img": "https://pbs.twimg.com/media/GWZIdcAaEAAf9BV?format=jpg&name=medium"
                 }
@@ -234,7 +234,7 @@
                     "url": "https://x.com/rainsong1107/status/1955955374571606264/photo/1",
                     "img": "https://pbs.twimg.com/media/GyTzCqaaEAAu8z9?format=jpg&name=large"
                 },
-                "nijika,ryo,hitoriGotou,kitaIkuyo": {
+                "nijika,ryo,bocchi,kita": {
                     "url": "https://x.com/rainsong1107/status/1845382781121200338/photo/1",
                     "img": "https://pbs.twimg.com/media/GZwd2sUaQAA8pMP?format=jpg&name=large"
                 },
@@ -246,7 +246,7 @@
                     "url": "https://x.com/rainsong1107/status/1877846836850905201/photo/1",
                     "img": "https://pbs.twimg.com/media/Gg9zuVLaMAAL7A-?format=jpg&name=large"
                 },
-                "nijika,ryo,kita,hitoriGotou": {
+                "nijika,ryo,kita,bocchi": {
                     "url": "https://x.com/rainsong1107/status/1868972021482438941/photo/1",
                     "img": "https://pbs.twimg.com/media/Ge_sIrCbwAA1KC8?format=jpg&name=large"
                 },
@@ -288,7 +288,7 @@
             "profile": "https://x.com/curo_zumi",
             "pfp": "https://pbs.twimg.com/profile_images/1503021324285124608/r5A_-MZI_400x400.jpg",
             "characters": {
-                "nijika,ryo,kita,hitoriGotou": {
+                "nijika,ryo,kita,bocchi": {
                     "url": "https://x.com/curo_zumi/status/1968329093947981859/photo/1",
                     "img": "https://pbs.twimg.com/media/G1DhiPVagAAQgsi?format=jpg&name=4096x4096"
                 }

@@ -15,70 +15,59 @@ async function fetchArt() {
   }
 }
 
-async function fetchImgFrom(artist){
+async function fetchImgFrom(artist) {
   const arts = await fetchArt();
   let results = [];
-      for (const key in arts.twitter[artist].characters) {
-        results.push(
-          arts.twitter[artist].characters[key].img,
-        );
-      }
-      // console.log(`getting info from ${artist}`);
-      return results;
+  for (const key in arts.twitter[artist].characters) {
+    results.push(arts.twitter[artist].characters[key].img);
+  }
+  // console.log(`getting info from ${artist}`);
+  return results;
 }
 
-async function fetchUrlFrom(artist){
+async function fetchUrlFrom(artist) {
   const arts = await fetchArt();
   let results = [];
-  for(key in arts.twitter[artist].characters){
-    results.push(
-      arts.twitter[artist].characters[key].url
-    );
+  for (key in arts.twitter[artist].characters) {
+    results.push(arts.twitter[artist].characters[key].url);
   }
   return results;
 }
 
-async function fetchCharacterFrom(artist){
+async function fetchCharacterFrom(artist) {
   const arts = await fetchArt();
   let results = [];
 
-  for(const key in arts.twitter[artist].characters){
-    results = Object.keys(arts.twitter[artist].characters)
-  
+  results = Object.keys(arts.twitter[artist].characters);
+
+  return results;
+}
+
+async function fetchArtistProfile(artist) {
+  const arts = await fetchArt();
+  let results = [];
+
+  for (const key in arts.twitter) {
+    results.push(arts.twitter[artist].profile);
   }
   return results;
 }
 
-async function fetchArtistProfile(artist){
+async function fetchArtistPfp(artist) {
   const arts = await fetchArt();
   let results = [];
-
-  for(const key in arts.twitter){
-    results.push(
-      arts.twitter[artist].profile
-    )
-  }
-  return results;
-
-}
-
-async function fetchArtistPfp(artist){
-  const arts = await fetchArt();
-  let results = [];
-  for(const key in arts.twitter){
-    results.push(
-      arts.twitter[artist].pfp
-    )
+  for (const key in arts.twitter) {
+    results.push(arts.twitter[artist].pfp);
   }
   return results;
 }
 
-async function getArtFrom(artist){
-  return{
-    image: await fetchImgFrom(artist), 
+async function getArtFrom(artist) {
+  return {
+    image: await fetchImgFrom(artist),
     characters: await fetchCharacterFrom(artist),
     url: await fetchUrlFrom(artist),
     profile: await fetchArtistProfile(artist),
-    pfp: await fetchArtistPfp(artist)
-  }
+    pfp: await fetchArtistPfp(artist),
+  };
 }

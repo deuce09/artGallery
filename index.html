@@ -32,14 +32,21 @@
 
     <!-- MIDDLE -->
     <div class="max-h-[96vh] overflow-auto rounded-[10px] mx-auto" style="scrollbar-width: none;">
+      <div class="mb-3 flex flex-col text-center" style="color: gray">
+        <b id="title">Deuce FaveArts</b>
+        <div id="indicatorParent" class="flex justify-between">
+          <i id="leftSideIndicator"><- idk what do put here</i>
+              <i id="rightSideIndicator">please wait...</i>
+        </div>
+      </div>
       <div class="lg:columns-5 md:columns-3 sm:columns-2 px-[25px] py-[20px] bg-slate-950 rounded">
         <div id="arts">
           <!-- art pics -->
         </div>
       </div>
-      <div class="mt-5 text-center flex flex-col" style="color: gray">
-        <div>that's all for now...</div>
-        <div class="mt-3">created by: <b>
+      <div class="mt-5 mb-5 text-center flex flex-col" style="color: gray">
+        <div>that's all for now... <i id="middleIndicator">(these drawings/arts are not mine)</i></div>
+        <div class="mt-3">gallery created by: <b>
             <a href="https://github.com/deuce09" target="_blank">deuce09</a></b> / <b><a
               href="https://www.instagram.com/bloooo.m/" target="_blank">bloom1lk</a></b></div>
       </div>
@@ -104,6 +111,16 @@
       const modalArtist = document.getElementById("modalArtist")
       const closeBtn = document.getElementById("closeBtn");
       const modalAnim = document.querySelectorAll(".modalAnim");
+      const title = document.getElementById("title");
+      const leftSide = document.getElementById("leftSideIndicator");
+      const rightSide = document.getElementById("rightSideIndicator");
+      const middle = document.getElementById("middleIndicator");
+      const indicator = document.getElementById("indicatorParent");
+
+      artistsParentDiv.style.opacity = "0";
+
+
+
 
       const charactersDiv = document.getElementById("characters");
 
@@ -112,7 +129,6 @@
 
       allTwtArtist = Object.keys(callJson.twitter);
       platform = Object.keys(callJson);
-
 
       console.log(`All artist = ${allTwtArtist.length}`);
 
@@ -144,9 +160,14 @@
         const arts = await getArtFrom(artist);
         const artImg = arts.image;
         const artUrl = arts.url;
-        const artCharacter = arts.characters;
-        const artistPfp = arts.pfp
-        const artistProfile = arts.profile
+
+        // TODO make characters only 1 with multiple index
+        // const artCharacter = arts.characters;
+
+        // console.log(artCharacter);
+
+        const artistPfp = arts.pfp;
+        const artistProfile = arts.profile;
 
         // for middle part (main gallery / pics / img)
         for (let i = 0; i < artImg.length; i++) {
@@ -171,7 +192,6 @@
           createDiv.setAttribute("id", `artImg${i}`);
 
           createImg.src = artImg[i];
-          console.log(artImg[i]);
 
           createImg.style.display = "none";
           createImg.style.transform = "translateY(-100px)";
@@ -265,16 +285,31 @@
         artistsDiv.appendChild(createDiv_Artist_Parent).appendChild(createDiv_Artist).appendChild(createLink_Artist).appendChild(createImg_Artist);
       }
 
-      artistsParentDiv.style.transition = "all 0.5s ease";
-      artistsDiv.style.transition = "min-height 0.5s ease, max-height 0.5s ease";
-      closeBtn.style.transition = "background-color 0.3s ease, color 0.3s ease";
+      async function displayTwtArtists() {
+        for (let i = 0; i < allTwtArtist.length; i++) {
+          await display(allTwtArtist[i], i);
+        }
+        leftSide.style.transition = "opacity 0.5s ease";
+        rightSide.style.transition = "opacity 0.5s ease";
+        rightSide.textContent = "artist loaded!";
+        setTimeout(() => {
+          rightSide.style.opacity = "0";
+          leftSide.style.opacity = "0"
+        }, 2000);
+        setTimeout(() => {
+          rightSide.style.display = "none";
+          leftSide.style.display = "none";
+        }, 2600);
+
+        artistsParentDiv.style.transition = "all 0.5s ease";
+        artistsParentDiv.style.opacity = "1";
+        artistsDiv.style.transition = "min-height 0.5s ease, max-height 0.5s ease";
+        closeBtn.style.transition = "background-color 0.3s ease, color 0.3s ease";
 
 
-      setTimeout(() => {
+
         const imgLoad = document.querySelectorAll(".imgLoad");
         const artistFocus = document.querySelectorAll(".artistFocus");
-
-        console.log(imgLoad);
 
 
         artistFocus.forEach(artist => {
@@ -338,32 +373,32 @@
           });
 
         });
-      }, 700)
-
-      artistsDiv.addEventListener("mouseenter", () => {
-        artistsDiv.classList.remove("max-h-[30vh]");
-        artistsDiv.classList.add("max-h-[96vh]");
-      });
-
-      artistsDiv.addEventListener("mouseleave", () => {
-        artistsDiv.classList.remove("max-h-[96vh]");
-        artistsDiv.classList.add("max-h-[30vh]");
-      });
-
-      closeBtn.addEventListener("mouseenter", () => {
-        closeBtn.style.backgroundColor = "black";
-        closeBtn.style.color = "white";
-      })
-
-      closeBtn.addEventListener("mouseleave", () => {
-        closeBtn.style.removeProperty("background-color");
-        closeBtn.style.color = "black";
-      })
 
 
-      for (i = 0; i < allTwtArtist.length; i++) {
-        display(allTwtArtist[i], i);
-      }
+        artistsDiv.addEventListener("mouseenter", () => {
+          artistsDiv.classList.remove("max-h-[30vh]");
+          artistsDiv.classList.add("max-h-[96vh]");
+        });
+
+        artistsDiv.addEventListener("mouseleave", () => {
+          artistsDiv.classList.remove("max-h-[96vh]");
+          artistsDiv.classList.add("max-h-[30vh]");
+        });
+
+        closeBtn.addEventListener("mouseenter", () => {
+          closeBtn.style.backgroundColor = "black";
+          closeBtn.style.color = "white";
+        })
+
+        closeBtn.addEventListener("mouseleave", () => {
+          closeBtn.style.removeProperty("background-color");
+          closeBtn.style.color = "black";
+        })
+
+      };
+
+      displayTwtArtists();
+
 
 
     })();
