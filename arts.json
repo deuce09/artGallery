@@ -3,295 +3,448 @@
         "nichi ⋆｡‧˚ʚ☀️ɞ˚‧｡⋆": {
             "profile": "https://x.com/snoo_chii",
             "pfp": "https://pbs.twimg.com/profile_images/1955001557327740928/lrTeGuee_400x400.jpg",
-            "characters": {
-                "reimu": {
+            "characters": [
+                {
+                    "name": "reimu",
                     "url": "https://x.com/snoo_chii/status/1955520560345256263/photo/1",
                     "img": "https://pbs.twimg.com/media/GyNnlQdaEAAXenJ?format=jpg&name=large"
-                    },
-                "cirno": {
+                },
+                {
+                    "name": "cirno",
                     "url": "https://x.com/snoo_chii/status/1955001319959470299/photo/1",
                     "img": "https://pbs.twimg.com/media/GyGPVcwaEAAgDKD?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "redi": {
             "profile": "https://x.com/redi_rkgk",
             "pfp": "https://pbs.twimg.com/profile_images/1538252701464674304/Dwx7-bev_400x400.jpg",
-            "characters": {
-                "unknown": {
+            "characters": [
+                {
+                    "name": "unknown",
                     "url": "https://x.com/redi_rkgk/status/1846957257700860211/photo/1",
                     "img": "https://pbs.twimg.com/media/GaG1xiQWAAAscba?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "jl_t4n": {
             "profile": "https://x.com/JL_T4N",
             "pfp": "https://pbs.twimg.com/profile_images/1617108081204432899/vN4CnjHH_400x400.jpg",
-            "characters": {
-                "ryo": {
+            "characters": [
+                {
+                    "name": "ryo",
                     "url": "https://x.com/JL_T4N/status/1954927165621121030/photo/1",
                     "img": "https://pbs.twimg.com/media/GyFL4wxXsAAv51A?format=jpg&name=4096x4096"
                 },
-                "bocchi": {
+                {
+                    "name": "bocchi",
                     "url": "https://x.com/JL_T4N/status/1964351998070845893/photo/1",
                     "img": "https://pbs.twimg.com/media/G0LHl_rWcAAAB1O?format=jpg&name=large"
                 },
-                "ryo": {
+                {
+                    "name": "ryo",
                     "url": "https://x.com/JL_T4N/status/1968648684385497255/photo/1",
                     "img": "https://pbs.twimg.com/media/G1ILf8xakAAQZZw?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "こうこうや": {
             "profile": "https://x.com/U80x8Bltm00Rqeo",
             "pfp": "https://pbs.twimg.com/profile_images/1815335926924791808/DbJU3fmh_400x400.jpg",
-            "characters": {
-                "frieren": {
+            "characters": [
+                {
+                    "name": "frieren",
                     "url": "https://x.com/U80x8Bltm00Rqeo/status/1967751073206313029/photo/1",
                     "img": "https://pbs.twimg.com/media/G07bBaQa0AAFBPB?format=jpg&name=4096x4096"
                 }
-            }
+            ]
         },
         "z": {
             "profile": "https://x.com/z_oio9",
             "pfp": "https://pbs.twimg.com/profile_images/1894418676360843264/xoUf7Bzq_400x400.jpg",
-            "characters": {
-                "unknown": {
+            "characters": [
+                {
+                    "name": "unknown",
                     "url": "https://x.com/z_oio9/status/1959275464863760573/photo/1",
                     "img": "https://pbs.twimg.com/media/GzC-piwaAAABVXA?format=jpg&name=large"
                 }
-            }
+            ]
         },
-        "きぬたく":{
+        "きぬたく": {
             "profile": "https://x.com/Kinutaku_",
             "pfp": "https://pbs.twimg.com/profile_images/1766707068726378496/ZQwKLWRO_400x400.jpg",
-            "characters": {
-                "unknown": {
+            "characters": [
+                {
+                    "name": "unknown",
                     "url": "https://x.com/Kinutaku_/status/1840006333971738720/photo/1",
                     "img": "https://pbs.twimg.com/media/GYkEAgCbUAAK9Lc?format=jpg&name=large"
                 },
-                "unknown": {
+                {
+                    "name": "unknown",
                     "url": "https://x.com/Kinutaku_/status/1896534597653160075/photo/1",
                     "img": "https://pbs.twimg.com/media/GlHYKQ6aQAE1cSA?format=jpg&name=medium"
                 },
-                "six": {
+                {
+                    "name": "six",
                     "url": "https://x.com/Kinutaku_/status/1886027679989960962/photo/1",
                     "img": "https://pbs.twimg.com/media/GiyELXgaEAADgEY?format=jpg&name=large"
                 },
-                "marisa": {
+                {
+                    "name": "marisa",
                     "url": "https://x.com/Kinutaku_/status/1853415099941417455/photo/1",
                     "img": "https://pbs.twimg.com/media/GbinNY_a8AA_GpP?format=jpg&name=medium"
                 },
-                "rena": {
+                {
+                    "name": "rena",
                     "url": "https://x.com/Kinutaku_/status/1851593050608591301/photo/1",
                     "img": "https://pbs.twimg.com/media/GbIuD-cbwAAdO6E?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "QUASARCAKE": {
             "profile": "https://x.com/QUASARCAKE",
             "pfp": "https://pbs.twimg.com/profile_images/1751210416783699968/mFB4CPQi_400x400.jpg",
-            "characters": {
-                "stark,fern,frieren": {
+            "characters": [
+                {
+                    "name": "stark,fern,frieren",
                     "url": "https://x.com/QUASARCAKE/status/1736081727565771145/photo/1",
                     "img": "https://pbs.twimg.com/media/GBfM3AFa8AAZz3P?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "れぇｯ/新刊委託中": {
             "profile": "https://x.com/ree_kkr",
             "pfp": "https://pbs.twimg.com/profile_images/1493378335719976962/zizTMnPA_400x400.png",
-            "characters": {
-                "nijika,ryo": {
+            "characters": [
+                {
+                    "name": "nijika,ryo",
                     "url": "https://x.com/ree_kkr/status/1830230056972718103/photo/1",
                     "img": "https://pbs.twimg.com/media/GWZIdcAaEAAf9BV?format=jpg&name=medium"
                 }
-            }
+            ]
         },
         "chikachan": {
             "profile": "https://x.com/Hawaii1090",
             "pfp": "https://pbs.twimg.com/profile_images/1763595111487975424/zVf95jsc_400x400.jpg",
-            "characters": {
-                "cirno": {
+            "characters": [
+                {
+                    "name": "cirno",
                     "url": "https://x.com/Hawaii1090/status/1830010175618437338/photo/1",
                     "img": "https://pbs.twimg.com/media/GWV_mGAbQAEpmmb?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "naro": {
             "profile": "https://x.com/Narorocc",
             "pfp": "https://pbs.twimg.com/profile_images/1889000905170616320/uYTWK-kN_400x400.jpg",
-            "characters": {
-                "unknown": {
+            "characters": [
+                {
+                    "name": "unknown",
                     "url": "https://x.com/Narorocc/status/1830310654265192599/photo/1",
                     "img": "https://pbs.twimg.com/media/GWaR1gfXsAEYyrs?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "茉葛": {
             "profile": "https://x.com/Matumatu_006",
             "pfp": "https://pbs.twimg.com/profile_images/1850579585601323009/Gmv6rEeg_400x400.jpg",
-            "characters": {
-                "unknown": {
+            "characters": [
+                {
+                    "name": "unknown",
                     "url": "https://x.com/Matumatu_006/status/1826973523312857471/photo/1",
                     "img": "https://pbs.twimg.com/media/GVq2u-sbwAAK2-a?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "れおなるど": {
             "profile": "https://x.com/LeoLeonardK10",
             "pfp": "https://pbs.twimg.com/profile_images/1555040852099346432/yFeVjQvK_400x400.jpg",
-            "characters": {
-                "unknown": {
+            "characters": [
+                {
+                    "name": "unknown",
                     "url": "https://x.com/LeoLeonardK10/status/1825453315611939043/photo/1",
                     "img": "https://pbs.twimg.com/media/GVVQFjQaIAAy7ee?format=jpg&name=4096x4096"
                 }
-            }
+            ]
         },
         "のりうま": {
             "profile": "https://x.com/noriuma_",
             "pfp": "https://pbs.twimg.com/profile_images/1860168787582242816/i1XDvY4g_400x400.jpg",
-            "characters": {
-                "reimu": {
+            "characters": [
+                {
+                    "name": "reimu",
                     "url": "https://x.com/noriuma_/status/1826809175365533735/photo/1",
                     "img": "https://pbs.twimg.com/media/GVohQsObgAAuaSu?format=jpg&name=900x900"
                 }
-            }
+            ]
         },
         "khyle.": {
             "profile": "https://x.com/khyleri",
             "pfp": "https://pbs.twimg.com/profile_images/1741861405836660736/5LApnIYv_400x400.jpg",
-            "characters": {
-                "nijika": {
+            "characters": [
+                {
+                    "name": "nijika",
                     "url": "https://x.com/khyleri/status/1759246948954153062/photo/1",
                     "img": "https://pbs.twimg.com/media/GGoZIKRacAAHdYd?format=jpg&name=4096x4096"
                 }
-            }
+            ]
         },
         "pong": {
             "profile": "https://x.com/pong__o0",
             "pfp": "https://pbs.twimg.com/profile_images/1817256561167024128/bCzz6Bsg_400x400.jpg",
-            "characters": {
-                "nijika,ryo": {
+            "characters": [
+                {
+                    "name": "nijika,ryo",
                     "url": "https://x.com/pong__o0/status/1966157394158981574/photo/1",
                     "img": "https://pbs.twimg.com/media/G0kxus7agAA8QMl?format=jpg&name=large"
                 },
-                "ryo": {
+                {
+                    "name": "ryo",
                     "url": "https://x.com/pong__o0/status/1968650800164458889/photo/1",
                     "img": "https://pbs.twimg.com/media/G1INcVhaQAEcd-W?format=jpg&name=4096x4096"
                 }
-            }
+            ]
         },
         "rella": {
             "profile": "https://x.com/Rellakinoko/photo",
             "pfp": "https://pbs.twimg.com/profile_images/1466177220905295878/iwAMQRAw_400x400.jpg",
-            "characters":{
-                "hatsune_miku": {
+            "characters": [
+                {
+                    "name": "hatsune_miku",
                     "url": "https://x.com/Rellakinoko/status/1962087728805544289/photo/1",
                     "img": "https://pbs.twimg.com/media/Gzq7xnSbkAAJNea?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "mokols": {
             "profile": "https://x.com/MYVia_MOKOLS",
             "pfp": "https://pbs.twimg.com/profile_images/1646300298556891138/9eRcFgt5_400x400.jpg",
-            "characters": {
-                "nijika": {
+            "characters": [
+                {
+                    "name": "nijika",
                     "url": "https://x.com/MYVia_MOKOLS/status/1843117488105803931/photo/1",
                     "img": "https://pbs.twimg.com/media/GZQRbTVbQAA8I73?format=jpg&name=4096x4096"
                 }
-            }
+            ]
         },
         "✟藤條未樂✟": {
             "profile": "https://x.com/9reiuy/photo",
             "pfp": "https://pbs.twimg.com/profile_images/1821890575211360259/xBmmo2be_400x400.jpg",
-            "characters": {
-                "nijika": {
+            "characters": [
+                {
+                    "name": "nijika",
                     "url": "https://x.com/9reiuy/status/1936586745421955403/photo/1",
                     "img": "https://pbs.twimg.com/media/GuAjYawWkAAzGWr?format=jpg&name=large"
                 },
-                "lain": {
+                {
+                    "name": "lain",
                     "url": "https://x.com/9reiuy/status/1668224243262459909/photo/1",
                     "img": "https://pbs.twimg.com/media/Fya5GqlacAE_Siy?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "machuuu": {
             "profile": "https://x.com/machuuu68",
             "pfp": "https://pbs.twimg.com/profile_images/1794806486247632896/Ggki6eGp_400x400.jpg",
-            "characters": {
-                "nijika,ryo": {
+            "characters": [
+                {
+                    "name": "nijika,ryo",
                     "url": "https://x.com/machuuu68/status/1837870662775611616/photo/1",
                     "img": "https://pbs.twimg.com/media/GYFtfb_bAAE338d?format=jpg&name=4096x4096"
                 }
-            }
+            ]
         },
         "生生不淅": {
             "profile": "https://x.com/rainsong1107",
             "pfp": "https://pbs.twimg.com/profile_images/1707008580619223040/KrnHMw4Z_400x400.jpg",
-            "characters": {
-                "nijika":{
+            "characters": [
+                {
+                    "name": "nijika",
                     "url": "https://x.com/rainsong1107/status/1955955374571606264/photo/1",
                     "img": "https://pbs.twimg.com/media/GyTzCqaaEAAu8z9?format=jpg&name=large"
                 },
-                "nijika,ryo,bocchi,kita": {
+                {
+                    "name": "nijika,ryo,bocchi,kita",
                     "url": "https://x.com/rainsong1107/status/1845382781121200338/photo/1",
                     "img": "https://pbs.twimg.com/media/GZwd2sUaQAA8pMP?format=jpg&name=large"
                 },
-                "nijika,ryo": {
+                {
+                    "name": "nijika,ryo",
                     "url": "https://x.com/rainsong1107/status/1890360602092077110/photo/1",
                     "img": "https://pbs.twimg.com/media/Gjvo8dvacAIeHWl?format=jpg&name=large"
                 },
-                "nijika,ryo,kita": {
+                {
+                    "name": "nijika,ryo,kita",
                     "url": "https://x.com/rainsong1107/status/1877846836850905201/photo/1",
                     "img": "https://pbs.twimg.com/media/Gg9zuVLaMAAL7A-?format=jpg&name=large"
                 },
-                "nijika,ryo,kita,bocchi": {
+                {
+                    "name": "nijika,ryo,kita,bocchi",
                     "url": "https://x.com/rainsong1107/status/1868972021482438941/photo/1",
                     "img": "https://pbs.twimg.com/media/Ge_sIrCbwAA1KC8?format=jpg&name=large"
                 },
-                "nijika,ryo": {
+                {
+                    "name": "nijika,ryo",
                     "url": "https://x.com/rainsong1107/status/1867392045482225890/photo/1",
                     "img": "https://pbs.twimg.com/media/GepPKGlbsAANlJ5?format=jpg&name=large"
                 },
-                "nijika,ryo": {
+                {
+                    "name": "nijika,ryo",
                     "url": "https://x.com/rainsong1107/status/1865287879506956744/photo/1",
                     "img": "https://pbs.twimg.com/media/GeLVbkKawAAFo5R?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "ぶんち": {
             "profile": "https://x.com/Bunch_1123",
             "pfp": "https://pbs.twimg.com/profile_images/1652306716544106496/blLudldn_400x400.jpg",
-            "characters": {
-                "frieren": {
+            "characters": [
+                {
+                    "name": "frieren",
                     "url": "https://x.com/Bunch_1123/status/1968601462293860818/photo/1",
                     "img": "https://pbs.twimg.com/media/G1Hgl6naQAAvae6?format=jpg&name=large"
                 },
-                "shinobu": {
+                {
+                    "name": "shinobu",
                     "url": "https://x.com/Bunch_1123/status/1967507414011523534/photo/1",
                     "img": "https://pbs.twimg.com/media/G039j72aUAAdOJv?format=jpg&name=large"
                 }
-            }
+            ]
         },
         "のろむ": {
             "profile": "https://x.com/eg_noro",
             "pfp": "https://pbs.twimg.com/profile_images/1828199130352488449/EQ_D4tjI_400x400.jpg",
-            "characters": {
-                "nijika": {
+            "characters": [
+                {
+                    "name": "nijika",
                     "url": "https://x.com/eg_noro/status/1967913880187023784/photo/1",
                     "img": "https://pbs.twimg.com/media/G09turCaIAAAJbC?format=jpg&name=4096x4096"
                 }
-            }
+            ]
         },
         "くろずみ": {
             "profile": "https://x.com/curo_zumi",
             "pfp": "https://pbs.twimg.com/profile_images/1503021324285124608/r5A_-MZI_400x400.jpg",
-            "characters": {
-                "nijika,ryo,kita,bocchi": {
+            "characters": [
+                {
+                    "name": "nijika,ryo,kita,bocchi",
                     "url": "https://x.com/curo_zumi/status/1968329093947981859/photo/1",
                     "img": "https://pbs.twimg.com/media/G1DhiPVagAAQgsi?format=jpg&name=4096x4096"
                 }
+            ]
+        },
+        "뿅": {
+            "profile": "https://x.com/BByong403",
+            "pfp": "https://pbs.twimg.com/profile_images/1841446896382201857/1SnYQkdq_400x400.jpg",
+            "characters": [
+                {
+                    "name": "unknown",
+                    "url": "https://x.com/BByong403/status/1946254186771062833/photo/1",
+                    "img": "https://pbs.twimg.com/media/GwJ67PTWwAAqiji?format=jpg&name=large"
+                },
+                {
+                    "name": "unknown",
+                    "url": "https://x.com/BByong403/status/1955275104721510863/photo/1",
+                    "img": "https://pbs.twimg.com/media/GyKIEnmaEAMe-O-?format=png&name=900x900"
+                },
+                {
+                    "name": "reimu",
+                    "url": "https://x.com/BByong403/status/1940014565330493845/photo/1",
+                    "img": "https://pbs.twimg.com/media/GuxQ9kbWUAE3v6M?format=png&name=900x900"
+                },
+                {
+                    "name": "hatsune_miku",
+                    "url": "https://x.com/BByong403/status/1924835530824679796/photo/1",
+                    "img": "https://pbs.twimg.com/media/GrZjrdPbAAENXdb?format=png&name=900x900"
+                },
+                {
+                    "name": "unknown",
+                    "url": "https://x.com/BByong403/status/1909959944163545348/photo/1",
+                    "img": "https://pbs.twimg.com/media/GoGKbvJb0AA7_x5?format=png&name=large"
+                },
+                {
+                    "name": "hatsune_miku",
+                    "url": "https://x.com/BByong403/status/1898673148112916928/photo/1",
+                    "img": "https://pbs.twimg.com/media/Gllw7DrbcAAWHfe?format=png&name=900x900"
+                },
+                {
+                    "name": "unknown",
+                    "url": "https://x.com/BByong403/status/1898050366018928851/photo/1",
+                    "img": "https://pbs.twimg.com/media/Glc6uEAbcAAytHE?format=png&name=900x900"
+                },
+                {
+                    "name": "bocchi",
+                    "url": "https://x.com/BByong403/status/1890865752032387195/photo/1",
+                    "img": "https://pbs.twimg.com/media/Gj20S43b0AAAU5g?format=png&name=900x900"
+                }
+            ]
+        }
+    },
+    "zerochan": {
+        "characters": {
+            "reimu": {
+                "url": "https://www.zerochan.net/4042518",
+                "img": "https://static.zerochan.net/Hakurei.Reimu.full.4042518.jpg"
+            },
+            "cirno": {
+                "url": "https://www.zerochan.net/3911341",
+                "img": "https://static.zerochan.net/Cirno.full.3911341.jpg"
+            },
+            "unknown": {
+                "url": "",
+                "img": "https://i5.walmartimages.com/seo/Kasane-Teto-Plush-7-87-Inches-Character-Toy-Influenced-by-Hatsune-Miku-Best-Gift-for-Fans-Collectors-C_ef38240a-b1a9-4888-bb6e-9e157f535aed.0163c02360fe15ec9a98bf102749963b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+            },
+            "ryo": {
+                "url": "https://www.zerochan.net/3778456",
+                "img": "https://static.zerochan.net/Yamada.Ryou.full.3778456.jpg"
+            },
+            "bocchi":{
+                "url": "https://www.zerochan.net/3840782",
+                "img": "https://static.zerochan.net/Gotou.Hitori.full.3840782.jpg"
+            },
+            "frieren": {
+                "url": "https://www.zerochan.net/4172163",
+                "img": "https://static.zerochan.net/Frieren.full.4172163.jpg"
+            },
+            "six": {
+                "url": "https://www.zerochan.net/2104077",
+                "img": "https://static.zerochan.net/Six.%28Little.Nightmares%29.full.2104077.jpg"
+            },
+            "marisa": {
+                "url": "https://www.zerochan.net/2313726",
+                "img": "https://static.zerochan.net/Kirisame.Marisa.full.2313726.jpg"
+            },
+            "rena": {
+                "url": "https://www.zerochan.net/959158",
+                "img": "https://static.zerochan.net/Ryuuguu.Rena.full.959158.jpg"
+            },
+            "stark": {
+                "url": "https://www.zerochan.net/4081753",
+                "img": "https://static.zerochan.net/Stark.full.4081753.jpg"
+            },
+            "fern": {
+                "url": "https://www.zerochan.net/4142461",
+                "img": "https://static.zerochan.net/Fern.full.4142461.jpg"
+            },
+            "nijika": {
+                "url": "https://www.zerochan.net/3778455",
+                "img": "https://static.zerochan.net/Ijichi.Nijika.full.3778455.jpg"
+            },
+            "hatsune_miku": {
+                "url": "https://www.zerochan.net/4517351",
+                "img": "https://static.zerochan.net/Hatsune.Miku.full.4517351.jpg"
+            },
+            "lain": {
+                "url": "https://www.zerochan.net/2906234",
+                "img": "https://static.zerochan.net/Iwakura.Lain.full.2906234.jpg"
+            },
+            "kita": {
+                "url": "https://www.zerochan.net/3778457",
+                "img": "https://static.zerochan.net/Kita.Ikuyo.full.3778457.jpg"
+            },
+            "shinobu": {
+                "url": "https://www.zerochan.net/3899106",
+                "img": "https://static.zerochan.net/Kochou.Shinobu.full.3899106.jpg"
             }
         }
     }

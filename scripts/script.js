@@ -18,8 +18,8 @@ async function fetchArt() {
 async function fetchImgFrom(artist) {
   const arts = await fetchArt();
   let results = [];
-  for (const key in arts.twitter[artist].characters) {
-    results.push(arts.twitter[artist].characters[key].img);
+  for (const char of arts.twitter[artist].characters) {
+    results.push(char.img);
   }
   // console.log(`getting info from ${artist}`);
   return results;
@@ -28,8 +28,8 @@ async function fetchImgFrom(artist) {
 async function fetchUrlFrom(artist) {
   const arts = await fetchArt();
   let results = [];
-  for (key in arts.twitter[artist].characters) {
-    results.push(arts.twitter[artist].characters[key].url);
+  for (const char of arts.twitter[artist].characters) {
+    results.push(char.url);
   }
   return results;
 }
@@ -38,8 +38,9 @@ async function fetchCharacterFrom(artist) {
   const arts = await fetchArt();
   let results = [];
 
-  results = Object.keys(arts.twitter[artist].characters);
-
+  for (const char of arts.twitter[artist].characters) {
+    results.push(char.name);
+  }
   return results;
 }
 
@@ -62,6 +63,15 @@ async function fetchArtistPfp(artist) {
   return results;
 }
 
+async function fetchCharacterIcon(character) {
+  const charIcon = await fetchArt();
+  let results = [];
+  for (const key in charIcon.zerochan.characters) {
+    results.push(charIcon.zerochan.characters[character].img);
+  }
+  return results;
+}
+
 async function getArtFrom(artist) {
   return {
     image: await fetchImgFrom(artist),
@@ -69,5 +79,11 @@ async function getArtFrom(artist) {
     url: await fetchUrlFrom(artist),
     profile: await fetchArtistProfile(artist),
     pfp: await fetchArtistPfp(artist),
+  };
+}
+
+async function getIcon(character) {
+  return {
+    image: await fetchCharacterIcon(character),
   };
 }
