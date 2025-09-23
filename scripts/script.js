@@ -1,4 +1,4 @@
-export async function fetchArt() {
+async function fetchArt() {
   try {
     const response = await fetch("./arts.json");
 
@@ -15,7 +15,7 @@ export async function fetchArt() {
   }
 }
 
-export async function fetchImgFrom(artist) {
+async function fetchImgFrom(artist) {
   const arts = await fetchArt();
   let results = [];
   for (const char of arts.twitter[artist].characters) {
@@ -25,7 +25,7 @@ export async function fetchImgFrom(artist) {
   return results;
 }
 
-export async function fetchUrlFrom(artist) {
+async function fetchUrlFrom(artist) {
   const arts = await fetchArt();
   let results = [];
   for (const char of arts.twitter[artist].characters) {
@@ -34,7 +34,7 @@ export async function fetchUrlFrom(artist) {
   return results;
 }
 
-export async function fetchCharacterFrom(artist) {
+async function fetchCharacterFrom(artist) {
   const arts = await fetchArt();
   let results = [];
 
@@ -44,7 +44,7 @@ export async function fetchCharacterFrom(artist) {
   return results;
 }
 
-export async function fetchArtistProfile(artist) {
+async function fetchArtistProfile(artist) {
   const arts = await fetchArt();
   let results = [];
 
@@ -54,7 +54,7 @@ export async function fetchArtistProfile(artist) {
   return results;
 }
 
-export async function fetchArtistPfp(artist) {
+async function fetchArtistPfp(artist) {
   const arts = await fetchArt();
   let results = [];
   for (const key in arts.twitter) {
@@ -63,7 +63,7 @@ export async function fetchArtistPfp(artist) {
   return results;
 }
 
-export async function fetchCharacterIcon(character) {
+async function fetchCharacterIcon(character) {
   const charIcon = await fetchArt();
   let results = [];
   for (const key in charIcon.zerochan.characters) {
@@ -72,7 +72,7 @@ export async function fetchCharacterIcon(character) {
   return results;
 }
 
-export async function getArtFrom(artist) {
+async function getArtFrom(artist) {
   return {
     image: await fetchImgFrom(artist),
     characters: await fetchCharacterFrom(artist),
@@ -82,7 +82,7 @@ export async function getArtFrom(artist) {
   };
 }
 
-export async function getIcon(character) {
+async function getIcon(character) {
   return {
     image: await fetchCharacterIcon(character),
   };
