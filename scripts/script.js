@@ -1,4 +1,4 @@
-async function fetchArt() {
+export async function fetchArt() {
   try {
     const response = await fetch("./arts.json");
 
@@ -72,7 +72,7 @@ async function fetchCharacterIcon(character) {
   return results;
 }
 
-async function getArtFrom(artist) {
+export async function getArtFrom(artist) {
   return {
     image: await fetchImgFrom(artist),
     characters: await fetchCharacterFrom(artist),
@@ -82,7 +82,7 @@ async function getArtFrom(artist) {
   };
 }
 
-async function getIcon(character) {
+export async function getIcon(character) {
   return {
     image: await fetchCharacterIcon(character),
   };
