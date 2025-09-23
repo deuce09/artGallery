@@ -291,8 +291,10 @@ async function displayTwtArtists() {
   for (let i = 0; i < allTwtArtist.length; i++) {
     await display(allTwtArtist[i], i);
   }
+}
 
-  // ===================================================
+async function displayAnimations(){
+    // ===================================================
   //                      ANIMATIONS
   // ===================================================
   mainContent.style.display = "block";
@@ -544,3 +546,4 @@ async function displayTwtArtists() {
 
 await displayLeftSide();
 await displayTwtArtists();
+await displayAnimations();
