@@ -61,8 +61,11 @@
       <div class="mt-5 mb-5 text-center flex flex-col" style="color: gray" id="footer">
         <div id="middleEnd">that's all for now... <i id="middleIndicator">(these drawings/arts are not mine)</i></div>
         <div class="mt-3" id="footerIndicator">gallery created by: <b>
-            <a href="https://github.com/deuce09" target="_blank" id="githubLink">deuce09</a></b> / <b><a
-              href="https://www.instagram.com/bloooo.m/" target="_blank" id="instagramLink">bloom1lk</a></b></div>
+            <a href="https://github.com/deuce09" target="_blank" id="githubLink">deuce09</a></b> / <b>
+            <a href="https://www.instagram.com/bloooo.m/" target="_blank" id="instagramLink">bloom1lk</a></b></div>
+        <div class="mt-3 flex gap-5">
+
+        </div>
       </div>
     </div>
 
@@ -123,7 +126,7 @@
     </div>
   </div>
 
-  <script src="/scripts/script.js"></script>
+  <script src="scripts/script.js"></script>
   <script>
     (async function () {
       const artDiv = document.getElementById("arts");
@@ -495,7 +498,7 @@
           includedCharactersDiv.classList.remove("max-h-[10vh]");
           includedCharactersDiv.classList.add("max-h-[96vh]");
           leftSideHover.style.opacity = "1";
-          artDiv.style.filter = "grayscale(100%) blur(1px)"
+          artDiv.style.filter = "grayscale(100%) blur(3px)"
         });
 
         includedCharactersDiv.addEventListener("mouseleave", () => {
@@ -638,7 +641,7 @@
         artistsDiv.addEventListener("mouseenter", () => {
           artistsDiv.classList.remove("max-h-[10vh]");
           artistsDiv.classList.add("max-h-[96vh]");
-          artDiv.style.filter = "grayscale(100%) blur(1px)";
+          artDiv.style.filter = "grayscale(100%) blur(3px)";
         });
 
         artistsDiv.addEventListener("mouseleave", () => {
