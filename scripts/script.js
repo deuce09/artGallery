@@ -1,6 +1,6 @@
 async function fetchArt() {
   try {
-    const response = await fetch("../arts.json");
+    const response = await fetch("./arts.json");
 
     if (!response.ok) {
       throw new Error("Could not fetch art");
