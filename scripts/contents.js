@@ -590,7 +590,7 @@ for (let i = 0; i < allArtist.length; i++) {
   dummyNumArr.push(i);
 }
 // console.log(allArtistArr);
-console.log(dummyNumArr);
+// console.log(dummyNumArr);
 
 let shuffleArtist = [];
 let dummyNum = [];
@@ -603,7 +603,7 @@ while (i--) {
   dummyNumArr.splice(j, 1);
   allArtistArr.splice(j, 1);
 }
-console.log(dummyNum);
+// console.log(dummyNum);
 
 async function displayTwtArtists() {
   for (let i = 0; i < allTwtArtist.length; i++) {
