@@ -415,9 +415,68 @@
                     "img": "https://pbs.twimg.com/media/GXiMsMtawAAxk7m?format=jpg&name=4096x4096"
                 }
             ]
+        },
+        "yew": {
+            "profile": "https://x.com/Yew005900",
+            "pfp": "https://pbs.twimg.com/profile_images/1917134322219552770/xuUBbKgA_400x400.jpg",
+            "characters": [
+                {
+                    "name": "offscript",
+                    "url": "https://x.com/Yew005900/status/1965041201842974824/photo/1",
+                    "img": "https://pbs.twimg.com/media/G0U6jlAagAAQfUu?format=jpg&name=4096x4096"
+                }
+            ]
+        },
+        "たんさ": {
+            "profile": "https://x.com/tntnsstn/photo",
+            "pfp": "https://pbs.twimg.com/profile_images/1828633456185868288/Qulr9UVg_400x400.jpg",
+            "characters": [
+                {
+                    "name": "offscript",
+                    "url": "https://x.com/tntnsstn/status/1916172142066208848/photo/1",
+                    "img": "https://pbs.twimg.com/media/GpecZ0eawAA3lSO?format=jpg&name=large"
+                }
+            ]
+        },
+        "7pi": {
+            "profile": "https://x.com/kaje7pi",
+            "pfp": "https://pbs.twimg.com/profile_images/1858321723646713856/v3Xvb-l3_400x400.jpg",
+            "characters": [
+                {
+                    "name": "unknown",
+                    "url": "https://x.com/kaje7pi/status/1946310670754189607/photo/1",
+                    "img": "https://pbs.twimg.com/media/GwKvPB1WoAExxbG?format=jpg&name=large"
+                },
+                {
+                    "name": "hatsune_miku",
+                    "url": "https://x.com/kaje7pi/status/1952493470809203152/photo/1",
+                    "img": "https://pbs.twimg.com/media/GximdeHbkAAH0nj?format=jpg&name=large"
+                },
+                {
+                    "name": "unknown",
+                    "url": "https://x.com/kaje7pi/status/1936785104296386887/photo/1",
+                    "img": "https://pbs.twimg.com/media/GuDXyFEagAAdFyj?format=jpg&name=large"
+                }
+            ]
+        },
+        "ホフマソ": {
+            "profile": "https://x.com/hofumaso",
+            "pfp": "https://pbs.twimg.com/profile_images/1970058769485967360/9m68wG9i_400x400.jpg",
+            "characters": [
+                {
+                    "name": "nijika",
+                    "url": "https://x.com/hofumaso/status/1970058949002182776/photo/1",
+                    "img": "https://pbs.twimg.com/media/G1cOFGNaUAAA4_B?format=jpg&name=large"
+                },
+                {
+                    "name": "nijika",
+                    "url": "https://x.com/hofumaso/status/1845794180486082599/photo/1",
+                    "img": "https://pbs.twimg.com/media/GZ2T68EaQAAHFIY?format=jpg&name=large"
+                }
+            ]
         }
     },
-    "zerochan": {
+    "zerochanTwt": {
         "characters": {
             "reimu": {
                 "url": "https://www.zerochan.net/4042518",
@@ -435,7 +494,7 @@
                 "url": "https://www.zerochan.net/3778456",
                 "img": "https://static.zerochan.net/Yamada.Ryou.full.3778456.jpg"
             },
-            "bocchi":{
+            "bocchi": {
                 "url": "https://www.zerochan.net/3840782",
                 "img": "https://static.zerochan.net/Gotou.Hitori.full.3840782.jpg"
             },
@@ -486,7 +545,11 @@
             "aura": {
                 "url": "https://www.zerochan.net/4055780",
                 "img": "https://static.zerochan.net/Aura.%28Sousou.no.Frieren%29.full.4055780.jpg"
-            }
+            },
+            "offscript": {
+                "url": "https://x.com/offsrambledegg/status/1863678987806871773/photo/1",
+                "img": "https://pbs.twimg.com/profile_images/1861460894401568768/oaqghNMg_400x400.jpg"
+            } 
         }
     }
 }

@@ -112,9 +112,27 @@ async function displayLeftSide() {
 
   // console.log(filteredCharacters);
 
+  let allCharactersArr = [];
+  filteredCharacters.forEach((character) => {
+    if (!allCharactersArr.includes(character)) {
+      allCharactersArr.push(character);
+    }
+  });
+
+  let i = allCharactersArr.length;
+  let j = 0;
+  let shuffleCharacter = [];
+  while (i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    shuffleCharacter.push(allCharactersArr[j]);
+    allCharactersArr.splice(j, 1);
+  }
+
   for (let i = 0; i < filteredCharacters.length; i++) {
-    const charIcon = await getIcon(filteredCharacters[i]);
+    const charIcon = await getIcon(shuffleCharacter[i]);
     const charIconImage = charIcon.image;
+    // console.log(filteredCharacters[i])
+    // console.log(charIconImage);
 
     let createDiv_characters = document.createElement("div");
     let createImg_characters = document.createElement("img");
@@ -127,16 +145,16 @@ async function displayLeftSide() {
     createDiv_characters.classList.add("w-15");
     createDiv_characters.classList.add("rounded-full");
 
-    createDivParent_characters.setAttribute("id", filteredCharacters[i]);
+    createDivParent_characters.setAttribute("id", shuffleCharacter[i]);
     createDivParent_characters.classList.add("characterFocus");
     createDivParent_characters.classList.add("p-[5px]");
 
     createImg_characters.style.width = "60px";
     createImg_characters.src = charIconImage;
-    createImg_characters.setAttribute("alt", filteredCharacters[i]);
+    createImg_characters.setAttribute("alt", shuffleCharacter[i]);
     createImg_characters.classList.add("rounded-full");
     createImg_characters.style.aspectRatio = "1/1";
-    createImg_characters.title = filteredCharacters[i];
+    createImg_characters.title = shuffleCharacter[i];
     createImg_characters.style.objectFit = "cover";
     createImg_characters.style.objectPosition = "top";
 
@@ -287,14 +305,8 @@ async function display(artist, counter) {
     .appendChild(createImg_Artist);
 }
 
-async function displayTwtArtists() {
-  for (let i = 0; i < allTwtArtist.length; i++) {
-    await display(allTwtArtist[i], i);
-  }
-}
-
-async function displayAnimations(){
-    // ===================================================
+async function displayAnimations() {
+  // ===================================================
   //                      ANIMATIONS
   // ===================================================
   mainContent.style.display = "block";
@@ -542,6 +554,40 @@ async function displayAnimations(){
     closeBtn.style.removeProperty("background-color");
     closeBtn.style.color = "black";
   });
+}
+
+const allArtist = allTwtArtist;
+// initiation for shuffling
+let allArtistArr = [];
+let dummyNumArr = [];
+
+allArtist.forEach((artist) => {
+  if (!allArtistArr.includes(artist)) {
+    allArtistArr.push(artist);
+  }
+});
+
+for(let i = 0; i < allArtist.length; i++){
+  dummyNumArr.push(i);
+}
+// console.log(allArtistArr);
+
+let shuffleArtist = [];
+let dummyNum = [];
+let j = 0;
+let i = allTwtArtist.length;
+while (i--) {
+  j = Math.floor(Math.random() * (i + 1));
+  shuffleArtist.push(allArtistArr[j]);
+  dummyNum.push(dummyNumArr[j]);
+  allArtistArr.splice(j, 1);
+}
+console.log(dummyNum);
+
+async function displayTwtArtists() {
+  for (let i = 0; i < allTwtArtist.length; i++) {
+    await display(shuffleArtist[i], dummyNum[i]);
+  }
 }
 
 await displayLeftSide();

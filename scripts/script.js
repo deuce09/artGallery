@@ -44,6 +44,15 @@ async function fetchCharacterFrom(artist) {
   return results;
 }
 
+async function fetchArtistName(artist){
+  const arts = await fetchArt();
+  let results = [];
+
+  results.push(arts.twitter[artist]);
+  console.log(results);
+  return results;
+}
+
 async function fetchArtistProfile(artist) {
   const arts = await fetchArt();
   let results = [];
@@ -66,9 +75,9 @@ async function fetchArtistPfp(artist) {
 async function fetchCharacterIcon(character) {
   const charIcon = await fetchArt();
   let results = [];
-  for (const key in charIcon.zerochan.characters) {
-    results.push(charIcon.zerochan.characters[character].img);
-  }
+  results.push(charIcon.zerochanTwt.characters[character].img);
+
+  // console.log(results);
   return results;
 }
 
