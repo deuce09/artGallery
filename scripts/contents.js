@@ -1,5 +1,8 @@
 import { getArtFrom, fetchArt, getIcon } from "./script.js";
 
+const allDiv = document.getElementById("allDiv");
+const startUpIndicator = document.getElementById("startUpIndicator");
+const startUpText = document.getElementById("startUpText");
 const artDiv = document.getElementById("arts");
 const artistsParentDiv = document.getElementById("artistsParent");
 const artistsDiv = document.getElementById("artists");
@@ -24,6 +27,16 @@ const rightSideHover = document.getElementById("rightSideHover");
 const footerIndicator = document.getElementById("footerIndicator");
 const footer = document.getElementById("footer");
 const mainContent = document.getElementById("mainContent");
+
+startUpIndicator.style.transition = "opacity 0.5s ease";
+
+function loadingText(divId, text) {
+  let createText = document.createElement("i");
+  createText.textContent = text;
+  divId.appendChild(createText);
+}
+
+startUpText.textContent = "getting favorite arts...";
 
 mainContent.style.opacity = "0";
 mainContent.style.filter = "blur(5px)";
@@ -333,6 +346,12 @@ async function displayAnimations() {
   artistsDiv.style.opacity = "1";
   includedCharactersDiv.style.opacity = "1";
 
+  allDiv.style.display = "flex";
+  startUpIndicator.style.opacity = "0";
+  setTimeout(() => {
+    startUpIndicator.style.display = "none";
+  }, 510);
+
   setTimeout(() => {
     mainContent.style.opacity = "1";
     mainContent.style.filter = "blur(0px)";
@@ -567,10 +586,11 @@ allArtist.forEach((artist) => {
   }
 });
 
-for(let i = 0; i < allArtist.length; i++){
+for (let i = 0; i < allArtist.length; i++) {
   dummyNumArr.push(i);
 }
 // console.log(allArtistArr);
+console.log(dummyNumArr);
 
 let shuffleArtist = [];
 let dummyNum = [];
@@ -580,6 +600,7 @@ while (i--) {
   j = Math.floor(Math.random() * (i + 1));
   shuffleArtist.push(allArtistArr[j]);
   dummyNum.push(dummyNumArr[j]);
+  dummyNumArr.splice(j, 1);
   allArtistArr.splice(j, 1);
 }
 console.log(dummyNum);
@@ -590,6 +611,10 @@ async function displayTwtArtists() {
   }
 }
 
+
+loadingText(startUpIndicator, "getting artists...");
 await displayLeftSide();
+loadingText(startUpIndicator, "building page...");
 await displayTwtArtists();
+loadingText(startUpIndicator, "sending death threats to deuce...");
 await displayAnimations();
