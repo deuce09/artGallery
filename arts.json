@@ -56,6 +56,11 @@
                     "name": "frieren",
                     "url": "https://x.com/U80x8Bltm00Rqeo/status/1967751073206313029/photo/1",
                     "img": "https://pbs.twimg.com/media/G07bBaQa0AAFBPB?format=jpg&name=4096x4096"
+                },
+                {
+                    "name": "megumin",
+                    "url": "https://x.com/U80x8Bltm00Rqeo/status/1972121171308278083/photo/1",
+                    "img": "https://pbs.twimg.com/media/G15gc7Yb0AM4_9W?format=jpg&name=4096x4096"
                 }
             ]
         },
@@ -474,9 +479,20 @@
                     "img": "https://pbs.twimg.com/media/GZ2T68EaQAAHFIY?format=jpg&name=large"
                 }
             ]
+        },
+        "Arkilide": {
+            "profile": "https://x.com/Arkilide",
+            "pfp": "https://pbs.twimg.com/profile_images/1868046275515408384/YLKi4QHi_400x400.jpg",
+            "characters": [
+                {
+                    "name": "frieren,fern",
+                    "url": "https://x.com/Arkilide/status/1971768219737510128/photo/1",
+                    "img": "https://pbs.twimg.com/media/G10gvtxX0AA0gA-?format=jpg&name=medium"
+                }
+            ]
         }
     },
-    "zerochanTwt": {
+    "icons": {
         "characters": {
             "reimu": {
                 "url": "https://www.zerochan.net/4042518",
@@ -549,7 +565,11 @@
             "offscript": {
                 "url": "https://x.com/offsrambledegg/status/1863678987806871773/photo/1",
                 "img": "https://pbs.twimg.com/profile_images/1861460894401568768/oaqghNMg_400x400.jpg"
-            } 
+            },
+            "megumin": {
+                "url": "https://myanimelist.net/character/117225/Megumin/pics",
+                "img": "https://cdn.myanimelist.net/images/characters/8/571685.jpg"
+            }
         }
     }
 }

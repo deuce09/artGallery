@@ -616,5 +616,5 @@ loadingText(startUpIndicator, "getting artists...");
 await displayLeftSide();
 loadingText(startUpIndicator, "building page...");
 await displayTwtArtists();
-loadingText(startUpIndicator, "sending death threats to deuce...");
+loadingText(startUpIndicator, "sending threats to deuce...");
 await displayAnimations();

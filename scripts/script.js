@@ -75,7 +75,7 @@ async function fetchArtistPfp(artist) {
 async function fetchCharacterIcon(character) {
   const charIcon = await fetchArt();
   let results = [];
-  results.push(charIcon.zerochanTwt.characters[character].img);
+  results.push(charIcon.icons.characters[character].img);
 
   // console.log(results);
   return results;
