@@ -13,6 +13,11 @@
                     "name": "cirno",
                     "url": "https://x.com/snoo_chii/status/1955001319959470299/photo/1",
                     "img": "https://pbs.twimg.com/media/GyGPVcwaEAAgDKD?format=jpg&name=large"
+                },
+                {
+                    "name": "furina",
+                    "url": "https://x.com/snoo_chii/status/1973435243660181688/photo/1",
+                    "img": "https://pbs.twimg.com/media/G2MM5DyaIAUFLsU?format=jpg&name=large"
                 }
             ]
         },
@@ -569,6 +574,10 @@
             "megumin": {
                 "url": "https://myanimelist.net/character/117225/Megumin/pics",
                 "img": "https://cdn.myanimelist.net/images/characters/8/571685.jpg"
+            },
+            "furina": {
+                "url": "https://x.com/snoo_chii/status/1973435243660181688/photo/1",
+                "img": "https://pbs.twimg.com/media/G2MM5DyaIAUFLsU?format=jpg&name=large"
             }
         }
     }
