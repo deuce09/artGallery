@@ -497,8 +497,8 @@
             ]
         },
         "solip": {
-            "profile": "",
-            "pfp": "",
+            "profile": "https://x.com/Solip_ist",
+            "pfp": "https://pbs.twimg.com/profile_images/1436598026995339264/pEi6E4NN_400x400.jpg",
             "characters": [
                 {
                     "name": "shinobu_oshino",
