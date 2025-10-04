@@ -495,6 +495,17 @@
                     "img": "https://pbs.twimg.com/media/G10gvtxX0AA0gA-?format=jpg&name=medium"
                 }
             ]
+        },
+        "solip": {
+            "profile": "",
+            "pfp": "",
+            "characters": [
+                {
+                    "name": "shinobu_oshino",
+                    "url": "https://x.com/Solip_ist/status/1972364857178751317/photo/1",
+                    "img": "https://pbs.twimg.com/media/G18_VBkbMAAjWBf?format=jpg&name=4096x4096"
+                }
+            ]
         }
     },
     "icons": {
@@ -578,6 +589,10 @@
             "furina": {
                 "url": "https://x.com/snoo_chii/status/1973435243660181688/photo/1",
                 "img": "https://pbs.twimg.com/media/G2MM5DyaIAUFLsU?format=jpg&name=large"
+            },
+            "shinobu_oshino": {
+                "url": "https://x.com/Solip_ist/status/1972364857178751317/photo/1",
+                "img": "https://pbs.twimg.com/media/G18_VBkbMAAjWBf?format=jpg&name=4096x4096"
             }
         }
     }
